@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  font-size: 16px;
 }
 
 a {
@@ -24,6 +25,16 @@ a:hover {
 }
 
 
+.brand-name {
+  font-size: 1.75rem;
+  color: whitesmoke;
+}
+
+@media (max-width: 375px) {
+  .brand-name {
+    font-size: 0.75rem;
+  }
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -129,9 +140,9 @@ a:hover {
 }
 
 .product-card {
-  width: 33%;
+  flex-grow: 1;
+  flex-shrink: 1;
   border: 2px solid lightslategray;
-  align-content: center;
 }
 
 .navbar ul {
@@ -409,6 +420,12 @@ a:hover {
 @media (max-width: 992px) {
   #hero {
     height: calc(100vh - 70px);
+  }
+}
+
+@media (max-width: 375px) {
+  #hero {
+    height: calc(100vh - 300px);
   }
 }
 
@@ -727,9 +744,9 @@ section {
 
 .portfolio #portfolio-flters li {
   cursor: pointer;
-  margin: 0 15px 15px 0;
+  margin: 0 10px 10px 0;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 10px;
   font-size: 12px;
   line-height: 20px;
   color: #444444;
@@ -1421,3 +1438,6 @@ section {
   text-decoration: none;
 }
 
+.product-card-product-name {
+  font-size: 0.75rem;
+}
